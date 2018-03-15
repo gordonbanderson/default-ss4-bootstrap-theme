@@ -28,5 +28,9 @@
   "css": {
     "src": "../css/style.css",
     "dest": "../css"
+  },
+
+  "resources": {
+    "css": "../../../public/resources/themes/suilven_default/css/"
   }
 }
