@@ -12,7 +12,6 @@
       <% include TwitterScript %>
 
   <body class="$ClassName<% if not $Menu(2) %> no-sidebar<% end_if %>" <% if $i18nScriptDirection %>dir="$i18nScriptDirection"<% end_if %>>
-  ++++++++++++++++ BLOG ++++++++++++++++++=
     $Layout
   </body>
 </html>
