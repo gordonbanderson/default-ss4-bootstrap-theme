@@ -14,7 +14,7 @@
         <% end_if %>
 
         <a href="$Link" class="btn btn-primary pull-right">
-            <%t SilverStripe\\Blog\\Model\\Blog.ReadMoreAbout "Read more about '{title}'s &rarr;" title=$Title %>
+            <%t SilverStripe\\Blog\\Model\\Blog.ReadMoreAbout "Read more about '{title}' &rarr;" title=$Title %>
         </a>
     </div>
     <div class="card-footer text-muted">
