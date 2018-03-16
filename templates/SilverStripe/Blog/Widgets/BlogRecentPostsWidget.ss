@@ -1,12 +1,9 @@
-<% if $Posts %>
-	<ul>
-		<% loop $Posts %>
-			<li>
-				<a href="$Link" title="$Title">
-					<span class="arrow">&rarr;</span>
-					<span class="text">$Title</span>
-				</a>
-			</li>
-		<% end_loop %>
-	</ul>
-<% end_if %>
+<ul class="fa-ul">
+    <% loop $Posts %>
+        <li><i class="fa-li fa fa-book"></i>
+            <a href="$Link" title="$Title">
+                <span class="text">$Title</span>
+            </a>
+        </li>
+    <% end_loop %>
+</ul>

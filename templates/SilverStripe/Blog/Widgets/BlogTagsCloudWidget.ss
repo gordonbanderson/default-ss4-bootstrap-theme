@@ -1,5 +1,5 @@
 <% if $Tags %>
-	<ul class="blogTagCloud">
+	<ul class="blogTagCloud fa-ul">
 		<% loop $Tags %>
 			<li>
 				<a href="$Link" title="$TagName">

@@ -1,9 +1,9 @@
 <% if $Archive %>
-	<ul>
+	<ul class="fa-ul">
 		<% loop $Archive %>
 			<li>
+                <i class="fa-li fa fa-calendar-alt"></i>
 				<a href="$Link" title="$Title">
-					<span class="arrow">&rarr;</span>
 					<span class="text">$Title</span>
 				</a>
 			</li>
