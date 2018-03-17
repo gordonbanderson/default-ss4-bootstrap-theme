@@ -27,10 +27,14 @@
   },
   "css": {
     "src": ["../css/bootstrapstyle.css"],
+    "thirdpartysrc": ["../css/thirdparty/aos.css" , "../css/thirdparty/test.css" ],
     "dest": "../css/dist"
   },
 
   "resources": {
-    "css": "../../../public/resources/themes/suilven_default/css/"
+    "css": {
+      "src:": "../css/dist/**/*.css",
+      "dest:": "../../../public/resources/themes/suilven_default/css/"
+    }
   }
 }

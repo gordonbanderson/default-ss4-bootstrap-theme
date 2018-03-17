@@ -9,7 +9,7 @@ module.exports = function (gulp, $, config, messages) {
     var rename = require('gulp-rename');
    var concat = require('gulp-concat');
 
-    gulp.task('minify-css', function () {
+    gulp.task('minify-css-bootstrap', function () {
         return gulp.src(config.css.src)
             //.pipe(concat('../css/thirdparty/aos.css')
             .pipe(cleanCSS())
