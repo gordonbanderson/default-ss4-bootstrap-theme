@@ -3,17 +3,20 @@
  *
  */
 
-module.exports = function(gulp, $, config, messages) {
+module.exports = function (gulp, $, config, messages) {
 
-  var cleanCSS = require('gulp-clean-css');
-  var rename = require('gulp-rename');
+   var cleanCSS = require('gulp-clean-css');
+    var rename = require('gulp-rename');
+   var concat = require('gulp-concat');
 
-  gulp.task('minify-css', function() {
-    return gulp.src(config.css.src)
-      .pipe(cleanCSS())
-      .pipe(rename({
-        suffix: '.min'
-      }))
-      .pipe(gulp.dest(config.css.dest));
-  });
+    gulp.task('minify-css', function () {
+        return gulp.src(config.css.src)
+            .pipe(concat('../css/aos.css')
+            .pipe(cleanCSS())
+            .pipe(rename({
+                suffix: '.min'
+            }))
+            .pipe(gulp.dest(config.css.dest)))
+            ;
+    });
 };

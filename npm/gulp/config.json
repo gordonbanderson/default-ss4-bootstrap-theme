@@ -26,8 +26,8 @@
     ]
   },
   "css": {
-    "src": "../css/style.css",
-    "dest": "../css"
+    "src": ["../css/style.css"],
+    "dest": "../css/dist"
   },
 
   "resources": {
