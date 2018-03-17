@@ -11,7 +11,7 @@
 'use strict';
 
 module.exports = function(gulp, $, config, messages) {
-  gulp.task('styles', function() {
+  gulp.task('styles-bootstrap', function() {
   	return gulp.src(config.sass.src)
   		.pipe($.plumber({
   			errorHandler: messages.error
