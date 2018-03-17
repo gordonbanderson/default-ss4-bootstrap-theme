@@ -1,0 +1,1 @@
+<script type="text/javascript" src="$ThemeDir/suilven_default/javascript/dist/app.min.js"/>
