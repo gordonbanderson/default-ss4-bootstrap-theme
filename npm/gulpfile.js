@@ -62,5 +62,5 @@ gulp.task('default', function() {
 
 // Gulp build task to run all tasks just once
 gulp.task('build', function() {
-	gulp.start('styles', 'minify-css');
+	gulp.start('styles-bootstrap', 'minify-css');
 });
