@@ -1,1 +1,1 @@
-<script type="text/javascript" src="$ThemeDir/suilven_default/javascript/dist/app.min.js"/>
+<script type="text/javascript" src="$ThemeDir/javascript/app.min.js"/>
