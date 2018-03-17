@@ -11,12 +11,12 @@ module.exports = function (gulp, $, config, messages) {
 
     gulp.task('minify-css', function () {
         return gulp.src(config.css.src)
-            .pipe(concat('../css/aos.css')
+            //.pipe(concat('../css/thirdparty/aos.css')
             .pipe(cleanCSS())
             .pipe(rename({
                 suffix: '.min'
             }))
-            .pipe(gulp.dest(config.css.dest)))
+            .pipe(gulp.dest(config.css.dest))
             ;
     });
 };
