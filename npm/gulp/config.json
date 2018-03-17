@@ -10,7 +10,7 @@
     }
   },
   "sass": {
-    "src": "../sass/**/*.scss",
+    "src": "../sass-bootstrap/**/*.scss",
     "destination": "../css",
     "sourcemaps": "../css",
     "config": {
@@ -26,7 +26,7 @@
     ]
   },
   "css": {
-    "src": ["../css/style.css"],
+    "src": ["../css/bootstrapstyle.css"],
     "dest": "../css/dist"
   },
 
