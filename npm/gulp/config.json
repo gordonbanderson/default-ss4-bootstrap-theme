@@ -26,7 +26,7 @@
     ]
   },
   "css": {
-    "src": ["../css/bootstrapstyle.css"],
+    "src": ["../css/bootstrap4.css"],
     "thirdpartysrc": ["../css/thirdparty/aos.css" , "../css/thirdparty/test.css" ],
     "dest": "../css/dist"
   },

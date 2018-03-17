@@ -8,7 +8,10 @@ module.exports = function(gulp, $, config, messages) {
     var uglify = require('gulp-uglify');
 
     gulp.task('minify-app-js', function() {
-        return gulp.src([ '../javascript/aos/aos.js', '../javascript/smartcrop.js' ])
+        return gulp.src([
+                '../javascript/thirdparty/aos.js',
+                '../javascript/thirdparty/smartcrop.js'
+        ])
             .pipe(concat('app.min.js'))
             .pipe(uglify())
             .pipe(gulp.dest('../javascript/dist/'));

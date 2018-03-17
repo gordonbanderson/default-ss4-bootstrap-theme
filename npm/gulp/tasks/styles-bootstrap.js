@@ -11,7 +11,10 @@
 'use strict';
 
 module.exports = function(gulp, $, config, messages) {
-  gulp.task('styles-bootstrap', function() {
+    var rename = require('gulp-rename');
+
+
+    gulp.task('styles-bootstrap', function() {
   	return gulp.src(config.sass.src)
   		.pipe($.plumber({
   			errorHandler: messages.error
