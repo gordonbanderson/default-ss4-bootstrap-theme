@@ -1,12 +1,12 @@
 {
-    "name": "suilven/default-bootstrap-ss4-theme",
+    "name": "suilven/default-ss4-bootstrap-theme",
     "description": "Base bootstrap templates and CSS for a basic install",
     "type": "silverstripe-theme",
     "keywords": ["silverstripe", "theme", "suilven", "boostrap"],
     "license": "BSD-3-Clause",
     "authors": [
         {
-            "name": "Gordon Anderson",
+            "name": "Gordon Anderson"
         }
     ],
     "require": {
