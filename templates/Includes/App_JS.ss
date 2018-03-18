@@ -1,1 +1,0 @@
-<script type="text/javascript" src="$ThemeDir/javascript/app.min.js"></script>
