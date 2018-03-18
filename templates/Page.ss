@@ -16,7 +16,7 @@
       <% if $i18nScriptDirection %>dir="$i18nScriptDirection"<% end_if %>>
     $Layout
 
-    <% require javascript("weboftalent-twitter-tools/javascript/render-twitter-embeds.js") %>
+    <% require javascript("weboftalent/twitter-tools:javascript/render-twitter-embeds.js") %>
 
     <% include AllJavaScriptFiles %>
 </body>
