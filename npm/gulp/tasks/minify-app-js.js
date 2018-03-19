@@ -10,7 +10,7 @@ module.exports = function(gulp, $, config, messages) {
     gulp.task('minify-app-js', function() {
         return gulp.src([
                 '../javascript/thirdparty/aos.js',
-                '../javascript/thirdparty/smartcrop.js'
+                '../javascript/thirdparty/jquery.timeago.js'
         ])
             .pipe(concat('app.min.js'))
             .pipe(uglify())
