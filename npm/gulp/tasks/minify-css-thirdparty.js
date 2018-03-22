@@ -12,7 +12,7 @@ module.exports = function (gulp, $, config, messages) {
     gulp.task('minify-css-thirdparty', function () {
         return gulp.src(config.css.thirdpartysrc)
             .pipe(cleanCSS())
-            .pipe(concat('app.min.css'))
+            .pipe(concat('thirdparty.min.css'))
             .pipe(gulp.dest(config.css.dest))
             ;
     });

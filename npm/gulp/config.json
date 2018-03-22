@@ -10,8 +10,14 @@
     }
   },
   "sass": {
-    "src": "../sass-bootstrap/**/*.scss",
-    "destination": "../css",
+    "src": {
+      "bootstrap": "../sass-bootstrap/**/*.scss",
+      "app": "../sass-app/**/*.scss"
+    },
+    "destination": {
+      "bootstrap": "../css",
+      "app": "../css/app"
+    },
     "sourcemaps": "../css",
     "config": {
       "style": "compressed",
@@ -26,6 +32,7 @@
     ]
   },
   "css": {
+    "appsrc": ["../css/app/app.css"],
     "src": ["../css/bootstrap4.css"],
     "thirdpartysrc": ["../css/thirdparty/aos.css" , "../css/thirdparty/test.css" ],
     "dest": "../css/dist"

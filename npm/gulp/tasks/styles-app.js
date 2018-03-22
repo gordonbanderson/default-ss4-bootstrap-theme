@@ -14,8 +14,8 @@ module.exports = function(gulp, $, config, messages) {
     var rename = require('gulp-rename');
 
 
-    gulp.task('styles-bootstrap', function() {
-  	return gulp.src(config.sass.src.bootstrap)
+    gulp.task('styles-app', function() {
+  	return gulp.src(config.sass.src.app)
   		.pipe($.plumber({
   			errorHandler: messages.error
   		}))
@@ -23,7 +23,7 @@ module.exports = function(gulp, $, config, messages) {
   		.pipe($.autoprefixer({
   			browsers: config.sass.autoprefixer
   		}))
-  		.pipe(gulp.dest(config.sass.destination.bootstrap))
+  		.pipe(gulp.dest(config.sass.destination.app))
   		.pipe($.notify(messages.success));
   });
 };
