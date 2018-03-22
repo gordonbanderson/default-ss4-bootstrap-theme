@@ -1,0 +1,31 @@
+@import "../sass-bootstrap/bootstrap/functions";
+@import "../sass-bootstrap/variables"; // from original Bootstrap variables
+
+// same as card padding, to match form alignment
+$comment-padding-x:          1.25rem !default;
+$comment-padding-y:          1.25rem !default;
+
+// meta-info, e.g. times, author etc
+$font-size-meta-info:       $font-size-sm;
+$fg-color-meta-info:        darken($gray-600, 5%) !default;
+
+// ---- comments ----
+.comments-holder {
+    .single-comment {
+        padding: $comment-padding-x $comment-padding-y $comment-padding-x $comment-padding-y;
+    }
+
+    .odd {
+        background: $gray-100;
+    }
+
+    .even {
+        background: $gray-200;
+    }
+}
+
+.meta-info {
+    font-size: $font-size-meta-info;
+    color: $fg-color-meta-info;
+    font-weight: bold;
+}
