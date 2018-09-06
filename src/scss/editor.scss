@@ -1,0 +1,56 @@
+@import "./variables";
+// sass-lint:disable clean-import-paths
+/*
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/mixins";
+@import "~bootstrap/scss/_variables";
+@import "~bootstrap/scss/_alert";
+@import "~bootstrap/scss/_tables";
+@import "~bootstrap/scss/_media";
+@import "~bootstrap/scss/_type";
+@import "~bootstrap/scss/_utilities";
+*/
+
+@import "~font-awesome/scss/font-awesome";
+// sass-lint:enable clean-import-paths
+@import "./typography";
+
+body.mceContentBody a.ss-broken {
+  background-color: $brand-danger;
+  border: 1px solid $brand-danger;
+  color: $label-color;
+  padding: 1px;
+  text-decoration: underline;
+}
+
+/*# sourceMappingURL=editor.css.map */
+
+.blockquote-footer {
+  background-color: $gray-lighter;
+}
+
+.maori {
+  background-color: $alert-danger-bg !important;
+}
+
+.text-hide {
+  font: $font-size-base/$line-height-computed $font-family-sans-serif;
+  color: $text-color;
+  outline: 1px dotted $text-muted;
+}
+
+/**
+ * These styles are copied through from Bootstrap to avoid using @extend
+ */
+// Refer: .center-block
+.center {
+  // GBA @todo This import fails currently - @include center-block;
+}
+// Refer: .pull-left
+.left {
+  float: left !important;
+}
+// Refer: .pull-right
+.right {
+  float: right !important;
+}
