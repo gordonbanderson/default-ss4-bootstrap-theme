@@ -32,7 +32,7 @@
                 </div>
             </form>
 
-            <% if $Records %>
+            <% if $ResultsFound > 0 %>
                 <p>$ResultsFound results found in $Time seconds</p>
 
                 <% if $ShowResult == 'FlickrResult' %>
@@ -56,6 +56,7 @@
 
             <% else %>
                 <p>Sorry, your search query did not return any results.</p>
+                <% if $Suggestions %>Did you mean? <% loop $Suggestions %><a href="$Top.CleanedLink?q=$Suggestion">$Suggestion</a><% end_loop %><% end_if %>
             <% end_if %>
         </div>
     </div>
