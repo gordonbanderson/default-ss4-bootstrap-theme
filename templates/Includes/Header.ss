@@ -1,152 +1,90 @@
 <!-- start header -->
 <header>
     <div class="container">
-        <div class="row nomargin">
-            <div class="col col-xs-12">
-                <div class="headnav">
-                    <ul>
-                        <li><a href="#mySignup" data-toggle="modal"><i class="icon-user"></i> Sign up</a></li>
-                        <li><a href="#mySignin" data-toggle="modal">Sign in</a></li>
-                    </ul>
-                </div>
-                <!-- Signup Modal -->
-                <div id="mySignup" class="modal styled hide fade" tabindex="-1" role="dialog" aria-labelledby="mySignupModalLabel" aria-hidden="true">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                        <h4 id="mySignupModalLabel">Create an <strong>account</strong></h4>
-                    </div>
-                    <div class="modal-body">
-                        <form class="form-horizontal">
-                            <div class="control-group">
-                                <label class="control-label" for="inputEmail">Email</label>
-                                <div class="controls">
-                                    <input type="text" id="inputEmail" placeholder="Email">
-                                </div>
-                            </div>
-                            <div class="control-group">
-                                <label class="control-label" for="inputSignupPassword">Password</label>
-                                <div class="controls">
-                                    <input type="password" id="inputSignupPassword" placeholder="Password">
-                                </div>
-                            </div>
-                            <div class="control-group">
-                                <label class="control-label" for="inputSignupPassword2">Confirm Password</label>
-                                <div class="controls">
-                                    <input type="password" id="inputSignupPassword2" placeholder="Password">
-                                </div>
-                            </div>
-                            <div class="control-group">
-                                <div class="controls">
-                                    <button type="submit" class="btn">Sign up</button>
-                                </div>
-                                <p class="aligncenter margintop20">
-                                    Already have an account? <a href="#mySignin" data-dismiss="modal" aria-hidden="true" data-toggle="modal">Sign in</a>
-                                </p>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-                <!-- end signup modal -->
-                <!-- Sign in Modal -->
-                <div id="mySignin" class="modal styled hide fade" tabindex="-1" role="dialog" aria-labelledby="mySigninModalLabel" aria-hidden="true">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                        <h4 id="mySigninModalLabel">Login to your <strong>account</strong></h4>
-                    </div>
-                    <div class="modal-body">
-                        <form class="form-horizontal">
-                            <div class="control-group">
-                                <label class="control-label" for="inputText">Username</label>
-                                <div class="controls">
-                                    <input type="text" id="inputText" placeholder="Username">
-                                </div>
-                            </div>
-                            <div class="control-group">
-                                <label class="control-label" for="inputSigninPassword">Password</label>
-                                <div class="controls">
-                                    <input type="password" id="inputSigninPassword" placeholder="Password">
-                                </div>
-                            </div>
-                            <div class="control-group">
-                                <div class="controls">
-                                    <button type="submit" class="btn">Sign in</button>
-                                </div>
-                                <p class="aligncenter margintop20">
-                                    Forgot password? <a href="#myReset" data-dismiss="modal" aria-hidden="true" data-toggle="modal">Reset</a>
-                                </p>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-                <!-- end signin modal -->
-                <!-- Reset Modal -->
-                <div id="myReset" class="modal styled hide fade" tabindex="-1" role="dialog" aria-labelledby="myResetModalLabel" aria-hidden="true">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                        <h4 id="myResetModalLabel">Reset your <strong>password</strong></h4>
-                    </div>
-                    <div class="modal-body">
-                        <form class="form-horizontal">
-                            <div class="control-group">
-                                <label class="control-label" for="inputResetEmail">Email</label>
-                                <div class="controls">
-                                    <input type="text" id="inputResetEmail" placeholder="Email">
-                                </div>
-                            </div>
-                            <div class="control-group">
-                                <div class="controls">
-                                    <button type="submit" class="btn">Reset password</button>
-                                </div>
-                                <p class="aligncenter margintop20">
-                                    We will send instructions on how to reset your password to your inbox
-                                </p>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-                <!-- end reset modal -->
-            </div>
-        </div>
         <div class="row">
             <div class="col col-xs-4">
                 <div class="logo">
-                    <a href="index.html"><img src="img/logo.png" alt="" class="logo" /></a>
+                    <a href="index.html"><img src="img/logo.png" alt="" class="logo"/></a>
                     <h1>$SiteConfig.Tagline</h1>
                 </div>
             </div>
+
             <div class="col col-xs-8">
-                <div class="navbar navbar-static-top">
-                    <div class="navigation">
-                        <nav>
-                            <ul class="nav topnav">
-                                <% loop $Menu(1) %>
-                                    <li class="dropdown">
-                                        <a href="$Link">$Title <% if $Children %><i class="icon-angle-down"></i><% end_if %></a>
-                                        <% if $Children %>
-                                            <ul class="dropdown-menu">
-                                                <% loop $Children %>
-                                                    <a href="$Link">$Title <% if $Children %><i class="icon-angle-right"></i><% end_if %></a>
-                                                    <% if $Children %>
-                                                        <ul class="dropdown-menu">
-                                                            <% loop $Children %>
-                                                                <a href="$Link">$Title <% if $Children %><% end_if %></a>
-                                                            <% end_loop %>
-                                                        </ul>
-                                                    <% end_if %>
-                                                <% end_loop %>
-                                            </ul>
-                                        <% end_if %>
-                                    </li>
-                                <% end_loop %>
-                            </ul>
-                        </nav>
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <% loop $Menu(1) %>
+                                <li class="nav-item<% if $IsCurrent %> active<% end_if %>">
+                                    <a class="nav-link<% if $Children %> dropdown-toggle<% end_if %>" href="$Link"
+                                        <% if $Children %> id="navbarDropdown{$ID}" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"<% end_if %>
+                                    >
+                                        $Title
+                                        <% if $IsCurrent %><span class="sr-only">(current)</span><% end_if %>
+                                                                          </a>
+                                    <% if $Children %>
+                                        <div class="dropdown-menu" aria-labelledby="navbarDropdown{$ID}">
+                                            <% loop $Children %>
+                                                <a class="dropdown-item" href="$Link">$Title</a>
+                                            <% end_loop %>
+                                        </div>
+                                    <% end_if %>
+                                </li>
+                            <% end_loop %>
+                        </ul>
                     </div>
-                    <!-- end navigation -->
-                </div>
+                </nav>
             </div>
         </div>
     </div>
 </header>
+
+<div class="row">
+    <div class="col col-xs-12">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Disabled</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+    </div>
+</div>
 <!-- end header -->
+
+
 
 
