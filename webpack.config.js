@@ -41,6 +41,38 @@ module.exports = {
                         loader: "img-loader"
                     }
                 ]
+            },
+            {
+                test: /\.svg/,
+                use: {
+                    loader: 'svg-url-loader',
+                    options: {}
+                }
+            },
+            {
+                // Match woff2 and patterns like .woff?v=1.1.1.
+                test: /\.woff2?(\?v=\d+\.\d+\.\d+)?$/,
+                use: {
+                    loader: "url-loader",
+                    options: {
+                        limit: 50000,
+                        mimetype: "application/font-woff",
+                        name: "./fonts/[name].[ext]", // Output below ./fonts
+                        publicPath: "../", // Take the directory into account
+                    },
+                },
+            },
+            {
+                test: /\.(eot|ttf)$/,
+                use: {
+                    loader: "url-loader",
+                    options: {
+                        limit: 50000,
+                        mimetype: "application/font-woff",
+                        name: "./fonts/[name].[ext]", // Output below ./fonts
+                        publicPath: "../", // Take the directory into account
+                    },
+                }
             }
         ]
     },
