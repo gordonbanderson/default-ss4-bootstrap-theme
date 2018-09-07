@@ -8,9 +8,9 @@
     "watchold": "node node_modules/cross-env/dist/bin/cross-env.js NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
     "hotold": "node node_modules/cross-env/dist/bin/cross-env.js NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
     "productionold": "node node_modules/cross-env/dist/bin/cross-env.js NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
-    "dev": "webpack --mode development --progress  --output dist/js/main.js",
-    "devdebug": "webpack --mode development --progress --verbose --display-error-details --output dist/js/main.js",
-    "prod": "webpack --mode production --progress  --output dist/js/main.js"
+    "dev": "webpack --mode development --progress",
+    "devdebug": "webpack --mode development --progress --verbose --display-error-details",
+    "prod": "webpack --mode production --progress"
   },
   "repository": {
     "type": "git",
