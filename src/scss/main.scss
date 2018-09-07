@@ -15,23 +15,12 @@
 // Base theme components
 @import "./print";
 @import "./typography";
-@import "./style";
-@import "./thirdparty/owl.carousel";
+@import "./thirdparty/flexslider";
 
 @import "./components/pagination";
 
+@import "./custom-fonts";
+@import "./overwrite";
+@import "./animate";
 
-/*
-@import "./components/blocks";
-@import "./components/blog";
-@import "./components/comments";
-@import "./components/footer";
-@import "./components/forms";
-@import "./components/header";
-@import "./components/nav";
-@import "./components/news-events";
-@import "./components/pages";
-@import "./components/search";
-@import "./components/sitemap";
-*/
-
+@import "./style";
