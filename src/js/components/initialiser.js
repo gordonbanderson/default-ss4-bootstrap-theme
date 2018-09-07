@@ -2,6 +2,10 @@
 import $ from 'jquery';
 /* eslint-enable */
 
-$(document).ready(function() {
-    $("time.timeago").timeago();
-});
+export default function () {
+    $(document).ready(function() {
+        $("time.timeago").timeago();
+    });
+}
+
+
