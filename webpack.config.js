@@ -1,6 +1,5 @@
 var path = require('path');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-
 const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
 const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 
@@ -91,6 +90,14 @@ module.exports = {
                         publicPath: "../", // Take the directory into account
                     },
                 }
+            },
+            {
+                test: /\.(jpg|png|gif|svg)$/,
+                loader: 'image-webpack-loader',
+                // Specify enforce: 'pre' to apply the loader
+                // before url-loader/svg-url-loader
+                // and not duplicate it in rules with them
+                enforce: 'pre'
             }
         ]
     },
