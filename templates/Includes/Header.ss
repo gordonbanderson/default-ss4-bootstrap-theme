@@ -20,13 +20,14 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav mr-auto">
                             <% loop $Menu(1) %>
-                                <li class="nav-item<% if $IsCurrent %> active<% end_if %>">
+                                <li class="nav-item<% if $IsCurrent %> active<% end_if %><% if $Children %> dropdown<% end_if %>">
                                     <a class="nav-link<% if $Children %> dropdown-toggle<% end_if %>" href="$Link"
-                                        <% if $Children %> id="navbarDropdown{$ID}" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"<% end_if %>
+                                        <% if $Children %> id="navbarDropdown{$ID}" role="button" data-toggle="dropdown"
+                                       aria-haspopup="true" aria-expanded="false"<% end_if %>
                                     >
                                         $Title
                                         <% if $IsCurrent %><span class="sr-only">(current)</span><% end_if %>
-                                                                          </a>
+                                    </a>
                                     <% if $Children %>
                                         <div class="dropdown-menu" aria-labelledby="navbarDropdown{$ID}">
                                             <% loop $Children %>
@@ -48,7 +49,8 @@
     <div class="col col-xs-12">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <a class="navbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
@@ -61,7 +63,8 @@
                         <a class="nav-link" href="#">Link</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Dropdown
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
