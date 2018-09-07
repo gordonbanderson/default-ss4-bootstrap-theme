@@ -1,10 +1,4 @@
-<script src="/resources/themes/default-ss4-bootstrap-theme/javascript/dist/bootstrap4.min.js"></script>
-<script src="/resources/themes/default-ss4-bootstrap-theme/javascript/dist/app.min.js"></script>
+$ClearAllRequirements
 
-<!-- todo, make this a common js file -->
-<script type="text/javascript">
-    jQuery(document).ready(function() {
-        jQuery("time.timeago").timeago();
-    });
-
-</script>
+<script src="/resources/themes/default-ss4-bootstrap-theme/dist/js/jquery-3.3.1.min.js"></script>
+<script src="/resources/themes/default-ss4-bootstrap-theme/dist/js/main.js"></script>
