@@ -2,6 +2,7 @@ var path = require('path');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
 const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
+const ConcatPlugin = require('webpack-concat-plugin');
 
 module.exports = {
     entry: {
@@ -105,6 +106,15 @@ module.exports = {
         new MiniCssExtractPlugin({
             filename: "css/[name].css",
             chunkFilename: "css/[id].css"
+        }),
+        new ConcatPlugin({
+            filesToConcat: [
+                'bootstrap',
+                'flexslider',
+                'timeago'
+            ],
+            name: 'js/thirdparty',
+            uglify: true
         })
     ]
 };
