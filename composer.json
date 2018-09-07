@@ -15,9 +15,7 @@
     },
 	"extra": {
         "expose": [
-            "css",
-            "images",
-            "javascript"
+            "dist"
         ]
 	}
 }
