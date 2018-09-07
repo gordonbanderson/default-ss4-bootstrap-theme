@@ -1,12 +1,27 @@
 var path = require('path');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
+const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
+const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
+
 module.exports = {
-    entry: [
-        './src/js/main.js'
-    ],
+    entry: {
+        bootstrap4: path.resolve(__dirname, 'src/js/bootstrap'),
+        main: path.resolve(__dirname, 'src/js/main')
+    },
     output: {
-        filename: 'dist/js/[name].[hash].bundle.js'
+        filename: 'js/[name].js',
+        chunkFilename: "[id].css"
+    },
+    optimization: {
+        minimizer: [
+            new UglifyJsPlugin({
+                cache: true,
+                parallel: true,
+                sourceMap: true // set to true if you want JS source maps
+            }),
+            new OptimizeCSSAssetsPlugin({})
+        ]
     },
     externals: {
         '$': 'jQuery',
@@ -81,8 +96,8 @@ module.exports = {
     },
     plugins: [
         new MiniCssExtractPlugin({
-            filename: "[name].css",
-            chunkFilename: "[id].css"
+            filename: "css/[name].css",
+            chunkFilename: "css/[id].css"
         })
     ]
 };
