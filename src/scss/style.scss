@@ -1462,7 +1462,6 @@ a.custom-carousel-nav:hover {
 ================================ */
 
 article {
-  float: left;
   width: 100%;
   margin-bottom: 40px;
 }
@@ -1600,12 +1599,17 @@ ul.meta-post li a {
 /* --- single post --- */
 
 .bottom-article {
-  float: left;
-  width: 100%;
   border-top: 1px solid #e9e9e9;
   border-bottom: 1px solid #e9e9e9;
   padding: 10px 0 10px 0;
   margin-top: 20px;
+
+    // bootstrap rows have 30px margin at the bottom
+    margin-bottom: 0px;
+}
+
+.row .bottom-article .row {
+    margin-bottom: 0px;
 }
 
 /* --- author info --- */
@@ -1613,8 +1617,17 @@ ul.meta-post li a {
 .about-author {
   border: 1px solid #d5d5d5;
   padding: 20px;
-  float: left;
   margin-bottom: 5px;
+
+    .thumbnail {
+        border: none;
+
+        img {
+            padding: 4px;
+            float: none;
+            border: 1px solid #d5d5d5;
+        }
+    }
 }
 
 .about-author h5 {
@@ -2381,7 +2394,6 @@ article img.pull-right, article .align-right {
     margin: 0;
   }
   .bottom-article a.pull-right {
-    float: left;
     margin-top: 20px;
   }
   .navbar .nav {
