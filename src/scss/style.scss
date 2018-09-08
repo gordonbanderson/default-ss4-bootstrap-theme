@@ -1642,6 +1642,10 @@ ul.meta-post li a {
     padding-right: 0px;
 }
 
+.no-right-horizontal-column-padding.col, .no-horizontal-padding.col-sm-3 {
+    padding-right: 0px;
+}
+
 // this fixes the column width mismatch when adding a border, with -15px margin offset by 15px padding
 .row.about-author {
     margin-left:0px;
