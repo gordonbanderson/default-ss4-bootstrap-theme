@@ -1,4 +1,6 @@
 var path = require('path');
+var debug = process.env.NODE_ENV !== "production";
+
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
 const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
@@ -18,7 +20,15 @@ module.exports = {
             new UglifyJsPlugin({
                 cache: true,
                 parallel: true,
-                sourceMap: true // set to true if you want JS source maps
+                sourceMap: true, // set to true if you want JS source maps
+                uglifyOptions: {
+                    compress: {
+                        drop_console: true
+                    },
+                    output: {
+                        comments: false
+                    }
+                },
             }),
             new OptimizeCSSAssetsPlugin({})
         ]
