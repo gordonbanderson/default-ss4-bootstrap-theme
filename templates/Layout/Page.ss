@@ -1,4 +1,3 @@
-<% include Header %>
 
 <main role="main" class="container">
 	<% if $SideBar %>

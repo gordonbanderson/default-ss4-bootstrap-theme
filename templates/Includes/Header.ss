@@ -49,13 +49,15 @@
 
 <section id="inner-headline">
     <div class="container">
-        <div class="row">
-            <div class="col col-xs4">
+        <div class="row h-100">
+            <div class="col col-8 my-auto">
                 <div class="inner-heading">
-                    <h2>$Title</h2>
+                    <h1>
+                        <% if $URLSegment == 'home' %>$SiteConfig.Title<% else %><% if $MetaTitle %>$MetaTitle<% else %>$Title<% end_if %><% end_if %>
+                    </h1>
                 </div>
             </div>
-            <div class="col col-xs8">
+            <div class="col col-4 my-auto">
                 $Breadcrumbs
             </div>
         </div>

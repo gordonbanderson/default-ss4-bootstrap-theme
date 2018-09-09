@@ -12,9 +12,10 @@
 
 <body class="$ClassName<% if not $Menu(2) %> no-sidebar<% end_if %>"
       <% if $i18nScriptDirection %>dir="$i18nScriptDirection"<% end_if %>>
-    $Layout
+    <% include TopBar %>
+    <% include Header %>
 
-    <% require javascript("weboftalent/twitter-tools:javascript/render-twitter-embeds.js") %>
+    $Layout
 
     <% include AllJavaScriptFiles %>
 </body>
