@@ -10,7 +10,9 @@
     "productionold": "node node_modules/cross-env/dist/bin/cross-env.js NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
     "dev": "webpack --mode development --progress",
     "devdebug": "webpack --mode development --progress --verbose --display-error-details",
-    "prod": "webpack --mode production --progress"
+    "prod": "webpack --mode production --progress",
+    "watch": "webpack --watch --mode development --progress"
+
   },
   "repository": {
     "type": "git",
