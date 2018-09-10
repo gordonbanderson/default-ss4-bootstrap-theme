@@ -17,5 +17,7 @@
         "expose": [
             "dist"
         ]
-	}
+	},
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
