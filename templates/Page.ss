@@ -14,6 +14,7 @@
       <% if $i18nScriptDirection %>dir="$i18nScriptDirection"<% end_if %>>
     <% include TopBar %>
     <% include Header %>
+    <% include InnerHeadline %>
 
     $Layout
 
