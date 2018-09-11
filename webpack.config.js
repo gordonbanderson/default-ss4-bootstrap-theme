@@ -121,7 +121,8 @@ module.exports = {
             filesToConcat: [
                 'bootstrap',
                 'flexslider',
-                'timeago'
+                'timeago',
+                'lazysizes'
             ],
             name: 'js/thirdparty',
             uglify: true
