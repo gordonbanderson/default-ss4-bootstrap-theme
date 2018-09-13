@@ -122,7 +122,8 @@ module.exports = {
                 'bootstrap',
                 'flexslider',
                 'timeago',
-                'lazysizes'
+                'lazysizes',
+                'cookieconsent'
             ],
             name: 'js/thirdparty',
             uglify: true

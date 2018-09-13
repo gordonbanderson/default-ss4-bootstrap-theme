@@ -2,9 +2,65 @@
 @import "./variables";
 
 .flexslider .slides img.main-img {
-    width: 40%;
+    width: 30%;
     float: right;
 
 }
 
+
+// overrides for flexslider
+.flex-direction-nav[style] {display:block !important;opacity:1 !important}
+
+.flexslider {
+    background: none;
+    border: none;
+}
+
+.flex-direction-nav a {
+    opacity: 1;
+    overflow: visible;
+}
+
+.flexslider:hover .flex-direction-nav .flex-prev {
+    opacity: 0.7;
+    left: -50px;
+}
+.flexslider:hover .flex-direction-nav .flex-prev:hover {
+    opacity: 1;
+}
+.flexslider:hover .flex-direction-nav .flex-next {
+    opacity: 0.7;
+    right: -50px;
+    width:100px;
+}
+.flexslider:hover .flex-direction-nav .flex-next:hover {
+    opacity: 1;
+}
+
+.flex-direction-nav a.flex-prev:before {
+    content: '';
+}
+
+.flex-direction-nav a.flex-prev .fa {
+    font-size: $font-size-h4;
+}
+
+.flex-direction-nav a.flex-next:before {
+    content: '';
+}
+
+.flex-direction-nav a.flex-next .fa {
+    font-size: $font-size-h4;
+}
+
+/*
+
+
+@media screen and (max-width: 860px) {
+    .flex-direction-nav .flex-prev {
+        opacity: 1;
+        left: 10px;
+    }
+}
+*/
 

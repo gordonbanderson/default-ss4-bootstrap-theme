@@ -13,8 +13,8 @@ export default function () {
     // slider
     $('.flexslider').flexslider({
         animation: "slide",
-        prevText: "<",
-        nextText: ">"
+        prevText: "<i class='fa fa-arrow-left'></i>",
+        nextText: "<i class='fa fa-arrow-right'></i>"
     });
 
 }
