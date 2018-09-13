@@ -5,6 +5,11 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
 const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 const ConcatPlugin = require('webpack-concat-plugin');
+const ProgressBarPlugin = require('progress-bar-webpack-plugin');
+
+var merge = require('webpack-merge');
+
+console.log('ENV', process.env.NODE_ENV);
 
 module.exports = {
     devtool: 'source-map',
@@ -129,6 +134,10 @@ module.exports = {
             ],
             name: 'js/thirdparty',
             uglify: true
+        }),
+        new ProgressBarPlugin({
+            format: 'Build [:bar] :percent (:elapsed seconds)',
+            clear: false,
         })
     ]
 };
