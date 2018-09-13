@@ -9,8 +9,8 @@ const ConcatPlugin = require('webpack-concat-plugin');
 module.exports = {
     entry: {
         bootstrap4: path.resolve(__dirname, 'src/js/bootstrap'),
-        main: path.resolve(__dirname, 'src/js/main'),
-        CookieConsent: path.resolve(__dirname, '../../vendor/bramdeleeuw/cookieconsent/javascript/src/cookieconsent')
+        CookieConsent: path.resolve(__dirname, '../../vendor/bramdeleeuw/cookieconsent/javascript/src/cookieconsent'),
+        main: path.resolve(__dirname, 'src/js/main')
     },
     output: {
         filename: 'js/[name].js',
