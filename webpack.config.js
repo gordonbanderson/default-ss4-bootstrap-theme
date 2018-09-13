@@ -7,6 +7,7 @@ const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 const ConcatPlugin = require('webpack-concat-plugin');
 
 module.exports = {
+    devtool: 'source-map',
     entry: {
         bootstrap4: path.resolve(__dirname, 'src/js/bootstrap'),
         CookieConsent: path.resolve(__dirname, '../../vendor/bramdeleeuw/cookieconsent/javascript/src/cookieconsent'),
