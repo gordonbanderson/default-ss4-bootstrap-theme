@@ -135,17 +135,6 @@ module.exports = {
             name: 'js/thirdparty',
             uglify: true
         }),
-        new ConcatPlugin({
-            filesToConcat: [
-                'bootstrap',
-                'flexslider',
-                'timeago',
-                'lazysizes',
-                'cookieconsent'
-            ],
-            name: 'js/TEST',
-            uglify: true
-        }),
         new ProgressBarPlugin({
             format: 'Build [:bar] :percent (:elapsed seconds)',
             clear: false,
