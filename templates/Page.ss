@@ -18,6 +18,8 @@
 
     $Layout
 
+    <% include CookieConsent %>
+
     <% include AllJavaScriptFiles %>
 </body>
 </html>
