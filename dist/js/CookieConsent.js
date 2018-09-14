@@ -81,39 +81,70 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./src/js/bootstrap.js");
+/******/ 	return __webpack_require__(__webpack_require__.s = "../../vendor/bramdeleeuw/cookieconsent/javascript/src/cookieconsent.js");
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./src/js/bootstrap.js":
-/*!*****************************!*\
-  !*** ./src/js/bootstrap.js ***!
-  \*****************************/
-/*! no exports provided */
+/***/ "../../vendor/bramdeleeuw/cookieconsent/javascript/src/cookieconsent.js":
+/*!*********************************************************************************!*\
+  !*** /var/www/vendor/bramdeleeuw/cookieconsent/javascript/src/cookieconsent.js ***!
+  \*********************************************************************************/
+/*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _scss_bootstrap_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../scss/bootstrap.scss */ "./src/scss/bootstrap.scss");
-/* harmony import */ var _scss_bootstrap_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_scss_bootstrap_scss__WEBPACK_IMPORTED_MODULE_0__);
-// GBA 8/9/2018 Trying bootstrap using concat addon
-// window.Popper = require('popper.js').default;
-//require('bootstrap');
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return CookieConsent; });
+class CookieConsent {
+  constructor() {
+    this.cookieName = 'CookieConsent';
+    this.cookieJar = [];
+    this.consent = [];
+    let cookies = document.cookie ? document.cookie.split('; ') : [];
 
+    for (let i = 0; i < cookies.length; i++) {
+      let parts = cookies[i].split('=');
+      let key = parts[0];
+      this.cookieJar[key] = parts.slice(1).join('=');
+    }
 
-/***/ }),
+    this.consent = this.isSet() ? decodeURIComponent(this.cookieJar[this.cookieName]).split(',') : [];
+  }
 
-/***/ "./src/scss/bootstrap.scss":
-/*!*********************************!*\
-  !*** ./src/scss/bootstrap.scss ***!
-  \*********************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+  isSet() {
+    return this.cookieJar[this.cookieName] !== undefined;
+  }
 
-// extracted by mini-css-extract-plugin
+  check(group) {
+    return this.consent.indexOf(group) !== -1;
+  }
+
+  pushToDataLayer() {
+    if (typeof dataLayer !== 'undefined') {
+      if (this.check('Prefrences')) {
+        dataLayer.push({
+          'event': 'cookieconsent_preferences'
+        });
+      }
+
+      if (this.check('Analytics')) {
+        dataLayer.push({
+          'event': 'cookieconsent_analytics'
+        });
+      }
+
+      if (this.check('Marketing')) {
+        dataLayer.push({
+          'event': 'cookieconsent_marketing'
+        });
+      }
+    }
+  }
+
+}
 
 /***/ })
 
 /******/ });
-//# sourceMappingURL=bootstrap4.js.map
+//# sourceMappingURL=CookieConsent.js.map
