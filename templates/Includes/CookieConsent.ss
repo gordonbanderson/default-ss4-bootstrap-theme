@@ -12,15 +12,15 @@
             </div>
             <div class="modal-body">
                 $SiteConfig.CookieConsentContent
+
+                <div class="cookie-consent__buttons">
+                    <a class="btn btn-default cookie-consent__button cookie-consent__button--accept" href="$AcceptAllCookiesLink"><%t CookieConsent.AcceptAllCookies 'Accept all cookies' %></a>
+                    <a class="btn btn-default hollow cookie-consent__button cookie-consent__button--manage" href="$CookiePolicyPage.Link"><%t CookieConsent.ManageCookies 'Manage cookie settings' %></a>
+                </div>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
             </div>
-        </div>
-
-        <div class="cookie-consent__buttons">
-            <a class="button cookie-consent__button cookie-consent__button--accept" href="$AcceptAllCookiesLink"><%t CookieConsent.AcceptAllCookies 'Accept all cookies' %></a>
-            <a class="button hollow cookie-consent__button cookie-consent__button--manage" href="$CookiePolicyPage.Link"><%t CookieConsent.ManageCookies 'Manage cookie settings' %></a>
         </div>
 
     </div>
