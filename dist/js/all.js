@@ -81,7 +81,7 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./src/js/main.js");
+/******/ 	return __webpack_require__(__webpack_require__.s = 2);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -143,6 +143,24 @@ class CookieConsent {
   }
 
 }
+
+/***/ }),
+
+/***/ "./src/js/bootstrap.js":
+/*!*****************************!*\
+  !*** ./src/js/bootstrap.js ***!
+  \*****************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _scss_bootstrap_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../scss/bootstrap.scss */ "./src/scss/bootstrap.scss");
+/* harmony import */ var _scss_bootstrap_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_scss_bootstrap_scss__WEBPACK_IMPORTED_MODULE_0__);
+// GBA 8/9/2018 Trying bootstrap using concat addon
+// window.Popper = require('popper.js').default;
+//require('bootstrap');
+
 
 /***/ }),
 
@@ -344,6 +362,17 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./src/scss/bootstrap.scss":
+/*!*********************************!*\
+  !*** ./src/scss/bootstrap.scss ***!
+  \*********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// extracted by mini-css-extract-plugin
+
+/***/ }),
+
 /***/ "./src/scss/main.scss":
 /*!****************************!*\
   !*** ./src/scss/main.scss ***!
@@ -352,6 +381,20 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 // extracted by mini-css-extract-plugin
+
+/***/ }),
+
+/***/ 2:
+/*!*********************************************************************************************************************!*\
+  !*** multi ./src/js/bootstrap /var/www/vendor/bramdeleeuw/cookieconsent/javascript/src/cookieconsent ./src/js/main ***!
+  \*********************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(/*! /var/www/themes/default-ss4-bootstrap-theme/src/js/bootstrap */"./src/js/bootstrap.js");
+__webpack_require__(/*! /var/www/vendor/bramdeleeuw/cookieconsent/javascript/src/cookieconsent */"../../vendor/bramdeleeuw/cookieconsent/javascript/src/cookieconsent.js");
+module.exports = __webpack_require__(/*! /var/www/themes/default-ss4-bootstrap-theme/src/js/main */"./src/js/main.js");
+
 
 /***/ }),
 
@@ -367,4 +410,4 @@ module.exports = jQuery;
 /***/ })
 
 /******/ });
-//# sourceMappingURL=main.js.map
+//# sourceMappingURL=all.js.map
