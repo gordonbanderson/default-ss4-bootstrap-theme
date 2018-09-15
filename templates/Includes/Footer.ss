@@ -17,14 +17,12 @@
             </div>
 
             <div class="col col-4">
-
                 <div class="widget">
                     <h5 class="widgetheading">Links</h5>
                     <ul class="link-list">
                         <li><a href="#" data-toggle="modal" data-target="#cookieConsentModal">Manage cookies</a></li>
                     </ul>
                 </div>
-
             </div>
 
             <div class="col col-4">
@@ -40,7 +38,6 @@
                         <i class="fa fa-envelope" aria-hidden="true"></i> gordon.b.anderson@gmail.com
                     </p>
                 </div>
-
             </div>
         </div>
     </div>
