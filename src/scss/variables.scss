@@ -22,6 +22,15 @@ $brand-warning:         #f0ad4e !default;
 $brand-danger:          #d9534f !default;
 
 
+// theme  colors
+$theme-color-1: #F03C02; // red
+
+
+// slider colors
+$slider-toggle-color: $theme-color-1;
+$slider-toggle-color-selected: #FFF;
+$slider-direction-buttons: #FFF;
+
 //== Scaffolding
 //
 //## Settings for some of the most global styles.
@@ -31,10 +40,12 @@ $body-bg:               #fff !default;
 //** Global text color on `<body>`.
 $text-color:            $gray-dark !default;
 
+
+
 //** Global textual link color.
-$link-color:            #0070b7 !default;
+$link-color:            $theme-color-1 !default;
 //** Link hover color set via `darken()` function.
-$link-hover-color:      darken($link-color, 5%) !default;
+$link-hover-color:      $theme-color-1;
 //** Link hover decoration.
 $link-hover-decoration: underline !default;
 
@@ -51,6 +62,7 @@ $font-family-base:        $font-family-sans-serif !default;
 
 $font-size-base:          0.875rem !default;
 $font-size-large:         ceil(($font-size-base * 1.25)) !default; // ~18px
+$font-size-medium:         ceil(($font-size-base * 1.05)) !default; // ~15px
 $font-size-small:         ceil(($font-size-base * 0.85)) !default; // ~12px
 
 $font-size-h1:            floor(($font-size-base * 2.8)) !default; // ~36px
@@ -69,7 +81,7 @@ $line-height-computed:    floor(($font-size-base * $line-height-base)) !default;
 $headings-font-family:    inherit !default;
 $headings-font-weight:    500 !default;
 $headings-line-height:    1.1 !default;
-$headings-color:          inherit !default;
+$headings-color:          #353535 !default;
 
 //** Custom spacing for images within typography
 $image-spacing: 18px !default;

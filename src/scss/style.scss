@@ -1433,16 +1433,16 @@ article {
     margin-bottom: 40px;
 }
 
-article .post-heading h3 {
+article h3 {
     margin-bottom: 20px;
 }
 
-article .post-heading h3 a {
+article  h3 a {
     font-weight: 700;
-    color: #353535;
+    color: $headings-color;
 }
 
-article .post-heading h3 a:hover {
+article  h3 a:hover {
     text-decoration: none;
 }
 
@@ -1957,7 +1957,7 @@ ul.social-network li {
     color: #5d5d5d;
     padding: 0;
     padding-top: 30px;
-    margin: 20px 0 0 0;
+    margin: 0;
 }
 
 #sub-footer p {
@@ -2714,3 +2714,12 @@ article img.pull-right, article .align-right {
 }
 
 /* Theme Styler :: End */
+
+
+
+// heading colors
+
+
+h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
+    color: $link-hover-color;
+}

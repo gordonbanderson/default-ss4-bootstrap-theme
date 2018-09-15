@@ -9,6 +9,31 @@
 
 .container#slider-wrapper-inner {
    background: none;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+
+
+// position the toggler
+.flex-control-nav {
+    bottom: -55px;
+}
+
+.flexslider p {
+    font-size: $font-size-medium;
+}
+
+
+// Slider pagination colors
+.flex-control-paging li a {
+    background: $slider-toggle-color;
+}
+
+.flex-control-paging li a.flex-active {
+    background: $slider-toggle-color-selected;
+}
+
+// arrows
+.flex-direction-nav i {
+    color: $slider-direction-buttons;
 }
