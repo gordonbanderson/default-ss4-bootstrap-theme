@@ -2797,3 +2797,28 @@ ul.commenting-rss-feed {
     }
 }
 
+
+
+@include media-breakpoint-down(lg) {
+    body {
+        background-color: cyan;
+    }
+}
+
+@include media-breakpoint-down(md) {
+    body {
+        background-color: yellow;
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    body {
+        background-color: pink;
+    }
+}
+
+@include media-breakpoint-down(xs) {
+    body {
+        background-color: gold;
+    }
+}
