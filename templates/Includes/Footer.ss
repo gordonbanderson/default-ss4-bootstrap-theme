@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row">
 
-            <div class="col col-4">
+            <div class="col col-12 col-lg-4">
                 <div class="widget">
                     <h5 class="widgetheading">Important stuff</h5>
                     <ul class="link-list">
@@ -15,7 +15,7 @@
                 </div>
             </div>
 
-            <div class="col col-4">
+            <div class="col col-12 col-lg-4">
                 <div class="widget">
                     <h5 class="widgetheading">Links</h5>
                     <ul class="link-list">
@@ -24,7 +24,7 @@
                 </div>
             </div>
 
-            <div class="col col-4">
+            <div class="col col-12 col-lg-4">
                 <div class="widget">
                     <h5 class="widgetheading">Contact</h5>
                     <address>
@@ -32,7 +32,7 @@
                         Address 2
                     </address>
                     <p>
-                        <i class="fa fa-phone" aria-hidden="true"></i>(+44) (0)7305422076 <br>
+                        <i class="fa fa-phone" aria-hidden="true"></i> (+44) (0)7305422076 <br>
                         <i class="fa fa-envelope" aria-hidden="true"></i> gordon.b.anderson@gmail.com
                     </p>
                 </div>
