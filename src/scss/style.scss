@@ -47,6 +47,10 @@ a:active {
     outline: 0;
 }
 
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+    color: $headings-color;
+}
+
 .clear {
     clear: both;
 }
@@ -1984,7 +1988,7 @@ footer h5 a:hover, footer a:hover {
     text-decoration: none;
 }
 
-ul.social-network {
+ul.social-network, ul.pagination {
     list-style: none;
     margin: 0;
 }
@@ -1997,8 +2001,7 @@ ul.social-network li {
     background: #0a0a0a;
     text-shadow: none;
     color: #5d5d5d;
-    padding: 0;
-    padding-top: 30px;
+    padding: 30px 0;
     margin: 0;
 }
 
@@ -2768,6 +2771,21 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
 }
 
 
+.blogposts  {
+    padding: 50px 0px;
+
+    h4 {
+        font-size: $font-size-h5;
+        font-weight: 600; // consistent with the blog widget
+        text-align: center;
+    }
+}
+
+ul.commenting-rss-feed {
+    margin-left: 0px;
+}
+
+
 @include media-breakpoint-down(md) {
     .widget {
         h4,h5 {
@@ -2776,6 +2794,5 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
 
         margin-bottom: 20px;
     }
-
-
 }
+
