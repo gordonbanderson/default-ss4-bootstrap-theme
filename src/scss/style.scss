@@ -285,47 +285,54 @@ header .logo h1 {
     }
 }
 
-header ul.nav li {
+header ul.navbar-nav li {
     border: none;
     margin: 0;
 }
 
-header ul.nav li a {
+header ul.navbar-nav li a {
     font-size: 12px;
     border: none;
     font-weight: 300;
     text-transform: uppercase;
 }
 
-.navbar .nav > li > a {
+.navbar .navbar-nav .nav > li > a {
     color: #111;
     text-shadow: none;
 }
 
-.navbar .nav a:hover {
+
+
+.navbar .navbar-nav a.active, .navbar .navbar-nav a.section {
+    color: blue;
+    background: yellow;
+}
+
+.navbar .navbar-nav .nav a:hover {
     background: none;
 }
 
-.navbar .nav > .active > a, .navbar .nav > .active > a:hover {
+.navbar .navbar-nav .nav > .active > a, .navbar .nav > .active > a:hover {
     background: none;
     font-weight: 600;
 }
 
-.navbar .nav > .active > a:active, .navbar .nav > .active > a:focus {
+.navbar .navbar-nav .nav > .active > a:active, .navbar .nav > .active > a:focus {
     background: none;
     outline: 0;
     font-weight: 600;
 }
 
-.navbar .nav li .dropdown-menu {
+.navbar .navbar-nav .nav li .dropdown-menu {
     z-index: 2000;
 }
 
-header ul.nav li ul {
+header ul.navbar-nav li ul {
     margin-top: 1px;
 }
 
-header ul.nav li ul li ul {
+header ul.navbar-nav li ul li ul {
     margin: 1px 0 0 1px;
 }
 
@@ -336,7 +343,7 @@ header ul.nav li ul li ul {
     padding-left: 20px;
 }
 
-.navbar .nav > li > .dropdown-menu:before {
+.navbar .navbar-nav > li > .dropdown-menu:before {
     display: inline-block;
     border-right: none;
     border-bottom: none;
@@ -345,7 +352,7 @@ header ul.nav li ul li ul {
     content: none;
 }
 
-.navbar .nav > li > .dropdown-menu:after {
+.navbar .navbar-nav > li > .dropdown-menu:after {
     display: inline-block;
     border-right: none;
     border-bottom: none;
@@ -353,7 +360,7 @@ header ul.nav li ul li ul {
     content: '';
 }
 
-ul.nav li.dropdown a {
+ul.navbar-nav li.dropdown a {
     z-index: 1000;
     display: block;
 }
