@@ -6,15 +6,25 @@
                 <ul class="slides">
                     <% loop $FeaturedPosts %>
                         <li>
-                            <img src="$FeaturedImage.FocusFillMax(256,256).URL"
-                                 alt="Featured image for blog post $Title" class="main-img"/>
-                            <h2 class="flex-caption">$Title</h2>
+                            <div class="row">
+                                <div class="col col-12 col-md-6">
+                                    <h2 class="flex-caption">$Title</h2>
 
-                            <% if $Summary %>
-                                $Summary
-                            <% else %>
-                                <p>$Excerpt</p>
-                            <% end_if %>
+                                    <% if $Summary %>
+                                        $Summary
+                                    <% else %>
+                                        <p>$Excerpt</p>
+                                    <% end_if %>
+                                </div>
+
+                                <div class="col col-12 col-md-6">
+                                    <img src="$FeaturedImage.FocusFillMax(256,256).URL"
+                                         alt="Featured image for blog post $Title" class="main-img"/>
+                                </div>
+
+                            </div>
+
+
                         </li>
                     <% end_loop %>
 
