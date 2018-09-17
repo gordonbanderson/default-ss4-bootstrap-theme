@@ -253,15 +253,13 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
- //import cookieconsent from '../../../../vendor/bramdeleeuw/cookieconsent/javascript/src/cookieconsent.js';
 
 
 
 Object(_components_lazysizes__WEBPACK_IMPORTED_MODULE_2__["default"])();
 Object(_thirdparty_loadtwitter__WEBPACK_IMPORTED_MODULE_0__["default"])();
 Object(_thirdparty_rendertweets__WEBPACK_IMPORTED_MODULE_1__["default"])();
-Object(_components_initialiser__WEBPACK_IMPORTED_MODULE_3__["default"])(); //cookieconsent();
-
+Object(_components_initialiser__WEBPACK_IMPORTED_MODULE_3__["default"])();
 Object(_components_cookieconsentpopup__WEBPACK_IMPORTED_MODULE_4__["default"])();
 /* eslint-enable */
 

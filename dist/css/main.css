@@ -2847,7 +2847,7 @@ html[xmlns] .flexslider .slides {
     right: 10px; } }
 
 .flexslider .slides img.main-img {
-  width: 30%;
+  width: 60%;
   float: right; }
 
 .flex-direction-nav[style] {
@@ -2889,16 +2889,10 @@ html[xmlns] .flexslider .slides {
 .flex-direction-nav a.flex-next .fa {
   font-size: 2rem; }
 
-/*
+@media (max-width: 991.98px) {
+  .flexslider .slides img.main-img {
+    float: none; } }
 
-
-@media screen and (max-width: 860px) {
-    .flex-direction-nav .flex-prev {
-        opacity: 1;
-        left: 10px;
-    }
-}
-*/
 .image {
   position: relative;
   padding-bottom: 66.5492958%;
@@ -6468,6 +6462,9 @@ body {
 a:active {
   outline: 0; }
 
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  color: #353535; }
+
 .clear {
   clear: both; }
 
@@ -6625,9 +6622,9 @@ header .logo img {
   margin-bottom: 10px; }
 
 header .logo h1 {
-  font-size: 2rem;
+  font-size: 24px;
   margin: 0;
-  font-weight: 300; }
+  font-weight: 500; }
 
 header .logo .logo1 {
   color: #333333; }
@@ -7978,7 +7975,7 @@ ul.time-post li.time {
 ================================ */
 footer {
   background: #111;
-  padding: 50px 0 0 0;
+  padding: 50px 0 50px 0;
   color: #bbb; }
 
 footer a {
@@ -7993,7 +7990,7 @@ footer address {
 footer h5 a:hover, footer a:hover {
   text-decoration: none; }
 
-ul.social-network {
+ul.social-network, ul.pagination {
   list-style: none;
   margin: 0; }
 
@@ -8004,8 +8001,7 @@ ul.social-network li {
   background: #0a0a0a;
   text-shadow: none;
   color: #5d5d5d;
-  padding: 0;
-  padding-top: 30px;
+  padding: 0px;
   margin: 0; }
 
 #sub-footer p {
@@ -8013,7 +8009,8 @@ ul.social-network li {
   padding: 0; }
 
 #sub-footer span {
-  color: #c7c7c7; }
+  color: #c7c7c7;
+  padding: 20px 0; }
 
 .copyright {
   text-align: left;
@@ -8655,6 +8652,26 @@ article img.pull-right, article .align-right {
 /* Theme Styler :: End */
 h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
   color: #F03C02; }
+
+.blogposts {
+  padding: 50px 0px; }
+  .blogposts h4 {
+    font-size: 0.875rem;
+    font-weight: 600;
+    text-align: center; }
+
+ul.commenting-rss-feed {
+  margin-left: 0px; }
+
+@media (max-width: 991.98px) {
+  .widget {
+    margin-bottom: 20px; }
+    .widget h4, .widget h5 {
+      margin-bottom: 0px; } }
+
+.page-link {
+  border: none;
+  margin: 0 7px 0 0; }
 
 
 /*# sourceMappingURL=main.css.map*/
