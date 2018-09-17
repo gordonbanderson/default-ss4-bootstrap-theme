@@ -245,8 +245,22 @@ header .logo img {
 }
 
 header .logo h1 {
-    font-size: 14px;
+    font-size: $font-size-large;
     margin: 0;
+    font-weight: 300;
+}
+
+header .logo .logo1 {
+    color: $gray-dark;
+}
+
+header .logo .logo2 {
+    color: $theme-color-1;
+}
+
+header .logo h2 {
+    font-size: $font-size-medium;
+    color: $gray-light
 }
 
 /* --- headnav menu : signup & signin --- */
@@ -304,10 +318,18 @@ header ul.navbar-nav li a {
 
 
 
-.navbar .navbar-nav a.active, .navbar .navbar-nav a.section {
-    color: blue;
-    background: yellow;
+.navbar .navbar-nav a.section {
+    color: $navbar-default-link-color;
 }
+
+.navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link.current {
+    color: $navbar-default-link-hover-color;
+}
+
+.navbar-light .navbar-nav .nav-link.current, .navbar-light .navbar-nav .nav-link.section  {
+    font-weight: bold;
+}
+
 
 .navbar .navbar-nav .nav a:hover {
     background: none;
@@ -326,6 +348,19 @@ header ul.navbar-nav li a {
 
 .navbar .navbar-nav .nav li .dropdown-menu {
     z-index: 2000;
+}
+
+.dropdown-menu a {
+    background: black;
+    color: #ddd;
+}
+
+.dropdown-menu a.current {
+    color: $dropdown-link-color;
+}
+
+.dropdown-menu a:hover {
+    //background-color: $theme-color-1;
 }
 
 header ul.navbar-nav li ul {
@@ -730,7 +765,7 @@ section.callaction {
 
 #inner-headline ol.breadcrumb {
     margin: 0;
-    float: right;
+   // float: right;
 }
 
 #inner-headline ol.breadcrumb li {
@@ -2227,7 +2262,7 @@ article img.pull-right, article .align-right {
 /* =============================
 21. Media queries
 ============================= */
-
+/*
 @media (min-width: 979px) and (max-width: 1200px) {
     #wrapper.boxed {
         width: 1000px;
@@ -2253,7 +2288,7 @@ article img.pull-right, article .align-right {
     .nivo-caption {
         width: 50%;
     }
-    /* slitslider */
+
     .sl-slider h2 {
         font-size: 72px;
     }
@@ -2333,11 +2368,11 @@ article img.pull-right, article .align-right {
         left: 0;
         bottom: -40px;
     }
-    /* slitslider */
+
     .sl-slider h2 {
         font-size: 60px;
     }
-    /* nivo slider */
+
     .nivo-caption {
         left: 0;
         bottom: 0;
@@ -2412,7 +2447,6 @@ article img.pull-right, article .align-right {
     .flexslider .slide-caption {
         display: none;
     }
-    /* nivo slider */
     .nivo-caption {
         background: none;
     }
@@ -2454,6 +2488,8 @@ article img.pull-right, article .align-right {
 
 @media (max-width: 360px) {
 }
+
+*/
 
 /* ============== options panel for live preview ======================= */
 
