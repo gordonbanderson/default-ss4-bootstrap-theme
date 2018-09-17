@@ -245,9 +245,9 @@ header .logo img {
 }
 
 header .logo h1 {
-    font-size: $font-size-large;
+    font-size: 24px;
     margin: 0;
-    font-weight: 300;
+    font-weight: 500;
 }
 
 header .logo .logo1 {
@@ -2765,4 +2765,17 @@ article img.pull-right, article .align-right {
 
 h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
     color: $link-hover-color;
+}
+
+
+@include media-breakpoint-down(md) {
+    .widget {
+        h4,h5 {
+            margin-bottom: 0px;
+        }
+
+        margin-bottom: 20px;
+    }
+
+
 }
