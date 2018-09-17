@@ -45,7 +45,7 @@
     </footer>
 
     <div class="container">
-        <div class="row">
+        <div class="row" id="sub-footer">
             <div class="col col-12"><span class="text-muted float-sm-right mb-1">&copy; $SiteConfig.Title</span></div>
         </div>
     </div>

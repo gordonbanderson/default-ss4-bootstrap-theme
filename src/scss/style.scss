@@ -1968,7 +1968,7 @@ ul.time-post li.time {
 
 footer {
     background: #111;
-    padding: 50px 0 0 0;
+    padding: 50px 0 50px 0;
     color: #bbb;
 }
 
@@ -2001,7 +2001,7 @@ ul.social-network li {
     background: #0a0a0a;
     text-shadow: none;
     color: #5d5d5d;
-    padding: 30px 0;
+    padding: 0px;
     margin: 0;
 }
 
@@ -2012,6 +2012,7 @@ ul.social-network li {
 
 #sub-footer span {
     color: #c7c7c7;
+    padding: 20px 0;
 }
 
 .copyright {

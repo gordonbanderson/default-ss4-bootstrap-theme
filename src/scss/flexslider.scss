@@ -54,9 +54,7 @@
     font-size: $font-size-h4;
 }
 
-
-
-
+// breakpoints
 @include media-breakpoint-down(md) {
     .flexslider .slides img.main-img {
         float: none;
