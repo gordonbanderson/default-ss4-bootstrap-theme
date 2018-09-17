@@ -2,7 +2,6 @@
     <div class="container">
         <div class="row">
 
-
             <div class="col col-4">
                 <div class="widget">
                     <h5 class="widgetheading">Important stuff</h5>
@@ -27,11 +26,10 @@
 
             <div class="col col-4">
                 <div class="widget">
-                    <h5 class="widgetheading">Get in touch with us</h5>
+                    <h5 class="widgetheading">Contact</h5>
                     <address>
-                        <strong>Flattern studio, Pte Ltd</strong><br>
-                        Springville center X264, Park Ave S.01<br>
-                        Semarang 16425 Indonesia
+                        <strong>Address 1</strong><br>
+                        Address 2
                     </address>
                     <p>
                         <i class="fa fa-phone" aria-hidden="true"></i>(+44) (0)7305422076 <br>
@@ -49,7 +47,6 @@
             <div class="col col-12"><span class="text-muted float-sm-right mb-1">&copy; $SiteConfig.Title</span></div>
         </div>
     </div>
-
 </div>
 
 
