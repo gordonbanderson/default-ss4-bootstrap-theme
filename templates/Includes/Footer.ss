@@ -7,22 +7,19 @@
 
                 <div class="col col-12 col-lg-4">
                     <div class="widget">
-                        <h5 class="widgetheading">Important stuff</h5>
+                        <h5 class="widgetheading">Links</h5>
                         <ul class="link-list">
-                            <li><a href="#">Press release</a></li>
-                            <li><a href="#">Terms and conditions</a></li>
-                            <li><a href="#">Privacy policy</a></li>
-                            <li><a href="#">Career center</a></li>
-                            <li><a href="#">Flattern forum</a></li>
+                            <li><i class="fa fa-github" aria-hidden="true"></i> <a href="https://github.com/gordonbanderson">GitHub</a></li>
+                            <li><i class="fa fa-flickr" aria-hidden="true"></i> <a href="https://flickr.com/gordonbanderson">Flickr</a></li>
                         </ul>
                     </div>
                 </div>
 
                 <div class="col col-12 col-lg-4">
                     <div class="widget">
-                        <h5 class="widgetheading">Links</h5>
+                        <h5 class="widgetheading">Site</h5>
                         <ul class="link-list">
-                            <li><a href="#" data-toggle="modal" data-target="#cookieConsentModal">Manage cookies</a></li>
+                            <li><i class="fa fa-laptop" aria-hidden="true"></i> <a href="#" data-toggle="modal" data-target="#cookieConsentModal">Manage cookies</a></li>
                         </ul>
                     </div>
                 </div>
@@ -30,14 +27,10 @@
                 <div class="col col-12 col-lg-4">
                     <div class="widget">
                         <h5 class="widgetheading">Contact</h5>
-                        <address>
-                            <strong>Address 1</strong><br>
-                            Address 2
-                        </address>
-                        <p>
-                            <i class="fa fa-phone" aria-hidden="true"></i> (+44) (0)7305422076 <br>
-                            <i class="fa fa-envelope" aria-hidden="true"></i> gordon.b.anderson@gmail.com
-                        </p>
+                        <ul class="link-list">
+                            <li><i class="fa fa-twitter" aria-hidden="true"></i> @nontgor (general)</li>
+                            <li><i class="fa fa-twitter" aria-hidden="true"></i> @cricgor (cricket)</li>
+                        </ul>
                     </div>
                 </div>
             </div>
