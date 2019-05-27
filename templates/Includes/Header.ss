@@ -4,7 +4,7 @@
         <div class="row">
             <div class="col col-12 col-md-4">
                 <div class="logo">
-                    <h1><span class="logo1">GORDON</span><span class="logo2">B</span><span class="logo1">ANDERSON</span></h1>
+                    <h1><a href="/"><span class="logo1">GORDON</span><span class="logo2">B</span><span class="logo1">ANDERSON</span></a></h1>
                     <h2>$SiteConfig.Tagline</h2>
                 </div>
             </div>
