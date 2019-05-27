@@ -2801,24 +2801,24 @@ ul.commenting-rss-feed {
 
 @include media-breakpoint-down(lg) {
     body {
-        background-color: cyan;
+       // background-color: cyan;
     }
 }
 
 @include media-breakpoint-down(md) {
     body {
-        background-color: yellow;
+    //    background-color: yellow;
     }
 }
 
 @include media-breakpoint-down(sm) {
     body {
-        background-color: pink;
+       // background-color: pink;
     }
 }
 
 @include media-breakpoint-down(xs) {
     body {
-        background-color: gold;
+      //  background-color: gold;
     }
 }
