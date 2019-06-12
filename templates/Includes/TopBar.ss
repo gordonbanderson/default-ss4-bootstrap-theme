@@ -1,11 +1,16 @@
 <div class="container">
-
-
     <div class="row nomargin">
         <div class="col col-12">
             <div class="headnav">
                 <ul>
-                    <li><a href="#" class="ml-2" data-toggle="modal" data-target="#loginModal"><i class="fa fa-sign-in">&nbsp;</i>Sign In</a></li>
+
+                    <li>
+                        <form id="search-form"  class="col-xs-12" name="search-form" method="get" action="/search">
+                            <input id="q" type="text" name="q" placeholder="Search…">
+                            <button type="submit" class="btn"><i class="fa fa-search" aria-hidden="true"></i></button>
+                        </form>
+                </li>
+                    <!-- <i class="fa fa-search">&nbsp;</i>Search</a></li> -->
                 </ul>
             </div>
 
