@@ -21,6 +21,7 @@
                         <ul class="link-list">
                             <li><i class="fa fa-sign-in"></i><a href="/#" class="ml-2" data-toggle="modal" data-target="#loginModal">Sign In</a></li>
                             <li><i class="fa fa-laptop" aria-hidden="true"></i> <a href="#" data-toggle="modal" data-target="#cookieConsentModal">Manage cookies</a></li>
+                            <li><i class="fa fa-rss" aria-hidden="true"></i> <a href="/rss">RSS</a></li>
                         </ul>
                     </div>
                 </div>
