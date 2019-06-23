@@ -1,5 +1,3 @@
-
-
 <div class="container-fluid" id="sub-footer">
     <footer class="footer">
         <div class="container">
