@@ -10,6 +10,9 @@
 @import "~bootstrap/scss/mixins/_clearfix.scss";
 @import "~bootstrap/scss/mixins/_breakpoints.scss";
 
+// photoswipe for flickr image viewing
+@import "~photoswipe/src/css/main.scss";
+
 // Mixins
 @import "./utils/mixins";
 
@@ -34,4 +37,6 @@
 @import "./pagination";
 @import "./searchpage";
 @import "./searchform";
+
+@import "./flickr";
 
