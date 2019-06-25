@@ -1,10 +1,4 @@
-<% require css("weboftalent/flickr:css/flickr.css") %>
-<% require css("weboftalent/flickr:thirdparty/photoswipe/photoswipe.css") %>
-<% require css("weboftalent/flickr:thirdparty/photoswipe/default-skin/default-skin.css") %>
 
-<% require javascript("weboftalent/flickr:thirdparty/photoswipe/photoswipe.min.js") %>
-<% require javascript("weboftalent/flickr:thirdparty/photoswipe/photoswipe-ui-default.min.js") %>
-<% require javascript("weboftalent/flickr:javascript/flickrswipe.js") %>
 
 
 
