@@ -25,16 +25,30 @@ mix.sass('src/scss/main.scss', 'dist/css')
             images: 'dist/img',
             fonts: 'dist/fonts'
         }
-    }).sourceMaps().
+    })
 
     // bootstrap
-   sass('src/scss/bootstrap.scss', 'dist/css/bootstrap4.css')
+    .sass('src/scss/bootstrap.scss', 'dist/css/bootstrap4.css')
     .options({
         postCss: [
             require('postcss-css-variables')()
         ]
-    }).sourceMaps()
-    //.js('src/js/main.js', 'dist/js');
+    })
+
+    .js('src/js/main.js', 'dist/js')
+    .scripts([
+        'js/thirdparty/bootstrap.min.js',
+        'js/thirdparty/jquery.flexslider.js',
+        'js/thirdparty/jquery.timeago.js',
+
+        // lazysizes
+        // cookieconsent
+    ], 'dist/js/thirdparty.js')
+
+    // workaround, see https://github.com/JeffreyWay/laravel-mix/issues/1793 - this results in map files in the
+    // same directory as the output files
+    .sourceMaps(true, 'source-map')
+
 // Full API
 // mix.js(src, output);
 // mix.react(src, output); <-- Identical to mix.js(), but registers React Babel compilation.
