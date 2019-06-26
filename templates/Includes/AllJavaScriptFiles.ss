@@ -11,7 +11,7 @@
         integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
         crossorigin="anonymous"></script>
     <script src="/resources/themes/default-ss4-bootstrap-theme/dist/js/bootstrap4.js"></script>
-
+    <script src="/resources/themes/default-ss4-bootstrap-theme/dist/js/vendor.js"></script>
     <script src="/resources/themes/default-ss4-bootstrap-theme/dist/js/main.js"></script>
 <% end_if %>
 

@@ -1,4 +1,4 @@
-export default function () {
+export  function renderTweets() {
     twttr.ready(function (twttr) {
         console.log('Twitter ready');
 

@@ -1,4 +1,4 @@
-export default function () {
+export function loadTwitter() {
     // see https://dev.twitter.com/web/javascript/loading
 
     console.log('**** loadtwitter default function ****')
@@ -21,3 +21,5 @@ export default function () {
     }(document, "script", "twitter-wjs"));
 
 }
+
+

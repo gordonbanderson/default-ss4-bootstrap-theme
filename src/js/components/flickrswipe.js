@@ -1,4 +1,9 @@
-(function($) {
+/* eslint-disable */
+import $ from 'jquery';
+
+/* eslint-enable */
+
+export function initialiseFlickrPhotoSwipe() {
     var $pswp = $('.pswp')[0];
     var image = [];
 
@@ -44,4 +49,4 @@
             lightBox.init();
         });
     });
-})(jQuery);
+}

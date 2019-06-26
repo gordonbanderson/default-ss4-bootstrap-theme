@@ -35,23 +35,37 @@ mix.sass('src/scss/main.scss', 'dist/css')
         ]
     })
 
-    .js('src/js/thirdparty/bootstrap4.js', 'dist/js/bootstrap4.js')
+    .js('node_modules/bootstrap/dist/js/bootstrap.js', 'dist/js/bootstrap4.js')
 
-    .babel([
-        './src/js/thirdparty/loadtwitter.js',
-        './src/js/thirdparty/rendertweets.js',
+    .scripts([
+            './node_modules/timeago/jquery.timeago.js',
+            './node_modules/flexslider/jquery.flexslider.js',
+            './node_modules/lazysizes/lazysizes.js',
+            './node_modules/photoswipe/dist/photoswipe.js',
+            './node_modules/photoswipe/dist/photoswipe-ui-default.js',
+    ],
+        'dist/js/vendor.js')
 
-        './node_modules/timeago/jquery.timeago.js',
-        './node_modules/lazysizes/lazysizes.js',
-        '../../vendor/bramdeleeuw/cookieconsent/javascript/src/cookieconsent',
-        './node_modules/photoswipe/dist/photoswipe.js',
-        './node_modules/photoswipe/dist/photoswipe-ui-default.js',
-        './node_modules/flexslider/jquery.flexslider.js',
+    .js([
+            './src/js/initialise/init.js'
+            /*
+            './src/js/thirdparty/loadtwitter.js',
+            './src/js/thirdparty/rendertweets.js',
 
-        './src/js/components/lazysizes.js',
-        './src/js/thirdparty/flickrswipe.js',
-        './src/js/components/initialiser.js',
-        './src/js/components/cookieconsentpopup.js'
+
+
+            ,
+            '../../vendor/bramdeleeuw/cookieconsent/javascript/src/cookieconsent',
+
+            ,
+
+
+            './src/js/components/lazysizes.js',
+            './src/js/thirdparty/flickrswipe.js',
+            './src/js/components/initialiser.js',
+            './src/js/components/cookieconsentpopup.js'
+
+             */
 
     ],
         'dist/js/main.js'
