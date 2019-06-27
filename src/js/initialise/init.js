@@ -3,7 +3,7 @@ import {loadTwitter} from "../components/loadtwitter";
 import {renderTweets} from "../components/rendertweets";
 import {initaliseTimeAgo} from "../components/timeago";
 import {initialiseFlickrPhotoSwipe} from "../components/flickrswipe";
-import {initialiseFlexSlider} from "../components/flexslider";
+import {initialiseFlexSlider} from "../components/initFlexSlider";
 
 console.log('INIT');
 initaliseLazy();
