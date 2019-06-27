@@ -1,6 +1,6 @@
 /* eslint-disable */
 import $ from 'jquery';
-import flexslider from 'flexslider';
+import * as flexslider from 'flexslider';
 
 /* eslint-enable */
 

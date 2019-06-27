@@ -1,6 +1,8 @@
 /* eslint-disable */
 import $ from 'jquery';
 
+import '../../../node_modules/photoswipe/src/css/default-skin/default-skin.scss';
+
 /* eslint-enable */
 
 export function initialiseFlickrPhotoSwipe() {
