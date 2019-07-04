@@ -48,6 +48,14 @@ button.owl-dot.active {
         color: $slider-fg-color;
     }
 
+    h2 a {
+        color: white;
+    }
+
+    p {
+        font-size: 150%;
+    }
+
     // this is to allow the slide indicator to show inside the red wrapper
     padding-bottom: 24px;
 }
