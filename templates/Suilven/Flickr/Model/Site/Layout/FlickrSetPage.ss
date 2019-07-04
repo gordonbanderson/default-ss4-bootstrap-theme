@@ -1,9 +1,3 @@
-
-
-
-
-
-
 <div class="container">
  <div class="row">
   <div class="col col-sm-12">
@@ -11,10 +5,7 @@
     <article>
      <div class="col col-lg-12">
       <a href="#flickrSetNavigation" class="downThePageNavigation">&darr;&nbsp;Navigation</a>
-      <h1>$Title</h1>
       $Description
-
-      THIS IS THE OVERRIDE
 
       <div class="gallery" itemscope itemtype="http://schema.org/ImageGallery">
        <% loop $FlickrSetForPage.FlickrPhotos.Sort(TakenAt)  %>
@@ -37,5 +28,3 @@
 </div>
 
 <% include Includes/PhotoSwipeCore %>
-
-
