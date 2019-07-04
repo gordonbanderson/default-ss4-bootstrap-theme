@@ -22,7 +22,8 @@
 // Base theme components
 @import "./print";
 @import "./typography";
-@import "./thirdparty/flexslider";
+@import "../../node_modules/owl.carousel/src/scss/owl.carousel.scss";
+//@import "../../node_modules/owl.carousel/src/scss/owl.theme.default.scss";
 @import "./flexslider";
 @import "./lazysizes";
 
@@ -39,4 +40,7 @@
 @import "./searchform";
 
 @import "./flickr";
+
+
+
 
