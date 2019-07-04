@@ -1,14 +1,60 @@
+.owl-nav {
+    .owl-prev {
+        position: absolute;
+        top: 50%;
+        left: -40px;
+    }
+
+    .owl-next {
+        position: absolute;
+        top: 50%;
+        right: -40px;
+    }
+
+    button i {
+
+    }
+}
+
+.owl-dots {
+    margin: auto;
+    display: inline;
+    position: absolute;
+    left: 50%;
+}
+
+.owl-carousel button.owl-dot {
+    background: #ccc;
+}
+
+button.owl-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    border: 1px solid #ccc;
+    margin-right: 5px;
+    display: inline-block; /*for making them horizontal, if you want vertical then you can use- display: block*/
+}
+
+button.owl-dot.active {
+    background: #353535;;
+}
+
+
 #slider-wrapper {
     background: $slider-bg-color;
 
-    h2,p {
+    h2, p {
         color: $slider-fg-color;
     }
+
+    // this is to allow the slide indicator to show inside the red wrapper
+    padding-bottom: 24px;
 }
 
 
 .container#slider-wrapper-inner {
-   background: none;
+    background: none;
     padding-top: 50px;
     padding-bottom: 10px;
 }
@@ -37,3 +83,4 @@
 .flex-direction-nav i {
     color: $slider-direction-buttons;
 }
+
