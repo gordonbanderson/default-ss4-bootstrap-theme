@@ -9,6 +9,8 @@ export function initialiseFlickrPhotoSwipe() {
     var $pswp = $('.pswp')[0];
     var image = [];
 
+    console.log('**** FLICKR SWIPE ****');
+
     $('.gallery').each( function() {
         var $pic     = $(this),
             getItems = function() {
@@ -17,12 +19,23 @@ export function initialiseFlickrPhotoSwipe() {
                     var $href   = $(this).attr('href'),
                         $size   = $(this).data('size').split('x'),
                         $width  = $size[0],
-                        $height = $size[1];
+                        $height = $size[1],
+                        $aperture = $(this).data('aperture'),
+                        $shutterspeed = $(this).data('shutterspeed'),
+                        $title=$(this).attr('title'),
+                        $takenAt = $(this).data('taken-at'),
+                        $link = $(this).data('link')
+                    ;
 
                     var item = {
                         src : $href,
                         w   : $width,
-                        h   : $height
+                        h   : $height,
+                        title: '<a href="' + $link + '"><i class="fa fa-flickr"></i></a> '+
+                            '<i class="fa fa-camera"></i> f' +
+                            $aperture + ' ' + $shutterspeed +'s ' +
+                            '<i class="fa fa-calendar"></i> ' + $takenAt + '<br/>' +
+                            $title
                     }
 
                     items.push(item);
@@ -43,7 +56,7 @@ export function initialiseFlickrPhotoSwipe() {
             var $index = $(this).index();
             var options = {
                 index: $index,
-                bgOpacity: 0.7,
+                bgOpacity: 0.9,
                 showHideOpacity: true
             }
 

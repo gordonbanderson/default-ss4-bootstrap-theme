@@ -10,7 +10,8 @@
       <div class="gallery" itemscope itemtype="http://schema.org/ImageGallery">
        <% loop $FlickrSetForPage.FlickrPhotos.Sort(TakenAt)  %>
         <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject" class="slide orientation{$Orientation}">
-         <a id="photo_$ID" href="$LargeURL" title="$Title" data-size="{$LargeWidth}x{$LargeHeight}">
+         <a id="photo_$ID" href="$LargeURL" title="$Title" data-size="{$LargeWidth}x{$LargeHeight}"
+         data-aperture="$Aperture" data-shutterspeed="$ShutterSpeed" data-taken-at="$TakenAt.Nice" title="$Title" data-link="$Link">
           <img src="$ThumbnailURL" itemprop="thumbnail" height="$ThumbnailHeight" width="$ThumbnailWidth" alt="$Title"
                style="height:{$ThumbnailHeight}px; width:{$ThumbnailWidth}px; margin-left:{$HorizontalMargin(120)}px;margin-top:{$VerticalMargin(120)}px;"/>
          </a>
