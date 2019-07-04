@@ -7,7 +7,7 @@
                 <div>
                     <div class="row">
                         <div class="col col-12 col-md-8">
-                            <h2 class="flex-caption">$Title</h2>
+                            <h2 class="flex-caption"><a href="$Link">$Title</a></h2>
 
                             <% if $Summary %>
                                 $Summary
@@ -17,8 +17,8 @@
                         </div>
 
                         <div class="col col-12 col-md-4">
-                            <img src="$FeaturedImage.FocusFillMax(256,256).URL"
-                                 alt="Featured image for blog post $Title" class="main-img"/>
+                            <a href="$Link"><img src="$FeaturedImage.FocusFillMax(256,256).URL"
+                                 alt="Featured image for blog post $Title" class="main-img"/></a>
                         </div>
                     </div>
                 </div>
