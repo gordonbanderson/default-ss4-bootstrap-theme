@@ -60,6 +60,7 @@
     "jquery": "^3.4.1",
     "lazysizes": "^4.1.8",
     "modernizr": "^3.7.1",
+    "owl.carousel": "^2.3.4",
     "photoswipe": "^4.1.3",
     "popper.js": "^1.15.0",
     "postcss-css-variables": "^0.13.0",
