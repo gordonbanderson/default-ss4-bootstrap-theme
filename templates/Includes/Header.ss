@@ -30,6 +30,8 @@
                                     </a>
                                     <% if $Children %>
                                         <div class="dropdown-menu" aria-labelledby="navbarDropdown{$ID}">
+                                            <a class="dropdown-item" href="$Link">$Title</a>
+                                            <div class="dropdown-divider"></div>
                                             <% loop $Children %>
                                                 <a class="dropdown-item $LinkingMode" href="$Link">$Title</a>
                                             <% end_loop %>
