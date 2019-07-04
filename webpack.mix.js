@@ -35,11 +35,13 @@ mix.sass('src/scss/main.scss', 'dist/css')
         ]
     })
 
-    .js('node_modules/bootstrap/dist/js/bootstrap.js', 'dist/js/bootstrap4.js')
+    .autoload({ jquery: ['$', 'window.jQuery', 'jQuery'] })
+
+.js('node_modules/bootstrap/dist/js/bootstrap.js', 'dist/js/bootstrap4.js')
 
     .scripts([
             './node_modules/timeago/jquery.timeago.js',
-            './node_modules/flexslider/jquery.flexslider.js',
+            './node_modules/owl.carousel/dist/owl.carousel.js',
             './node_modules/lazysizes/lazysizes.js',
             './node_modules/photoswipe/dist/photoswipe.js',
             './node_modules/photoswipe/dist/photoswipe-ui-default.js',
