@@ -40,6 +40,6 @@
     "gulp-rename": "^1.2.2",
     "gulp-uglify": "^3.0.0",
     "webpack": "^4.1.1",
-    "webpack-cli": "^2.0.12"
+    "webpack-cli": "^5.0.1"
   }
 }
